@@ -22,3 +22,7 @@ $ git rm --cached FileName.php // add aneluc  status@  stugum enq  yete  ka  ave
 							
 								/* COMMIT*/
 $git commit -a -m"mesage"  // -a nshanakuma      // -m " ira  mej  grumenq  commiti  anun@  " commit indexsaciaya  anum menak add eghac filer@
+
+										/*$ git checkout */
+$ git checkout -- css/style.css  //veradarcnuma  noxord  commit  arac vijakin  fil@
+
