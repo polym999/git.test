@@ -1,7 +1,8 @@
 1:git init  // asumenq  vor  es  proekti het  ashkhati  git@  steghcuma  iran  hamapataskhan  folder
 
 2 : git status  // cuyca  talis  tvyal pahin  projecti  iravijak@ 
-
+					
+								/*IGNORE*/
 3 IGNORE // DZERQOV  SDTEGHCUM ENQ  .ignore file  fortgh  grumenq  vor  filer@  commit  chain  
 3->//# logs  papken  commit  chi  ani  
 3->logs/
@@ -9,9 +10,9 @@
 3->css/*/txt 
 
 4 :$ git status --untracked-files=all // bolor  filer@  ignore  aracnernel miasin  cuyca  talis
+
 						
 								/* add  file  git*/
-								
 $git add . //avelacnuma  amboghj@  
 $git add "*.css"//add a  anum menak  .css filer@
 $git add -A // ?? kardal avelacnuma  amboghj@
@@ -19,10 +20,22 @@ $git add -u // ??kardal
 								/* reset  add file  */
 $ git reset // bolor  avelacrac  filer@  cheghyal  en hamarvum add eghacner@ cheghyalen  hamarvum 
 $ git rm --cached FileName.php // add aneluc  status@  stugum enq  yete  ka  avelort  mi  file  iran  add  eghacneric  hanumenq  es  hramanov 
+
 							
 								/* COMMIT*/
 $git commit -a -m"mesage"  // -a nshanakuma      // -m " ira  mej  grumenq  commiti  anun@  " commit indexsaciaya  anum menak add eghac filer@
 
+
 										/*$ git checkout */
 $ git checkout -- css/style.css  //veradarcnuma  noxord  commit  arac vijakin  fil@
 
+										
+										/* COMMIT HISTORY LOG*/
+$ git log //cuyca  talis   bolor  commitner@  "iranc  patmutyun@"   yete  chenq  karoghanum  logi  mejic  durs  gal  sxmum enq  klavisha  Q kam  q 
+$git log --all --pretty=format:"%h %cd %s (%an)" //mi toghov  hamarot  sagh  infon  mej@  kberi  
+$ git log --pretty=oneline // amen commit@  tpuma  mi  toghov qich  infoyov
+$git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago' // es  dzevov  asumenq  qani  orva  commitner@  cuyc  ta
+//AUTOR :COMMIT ANOGHI ANUN@  GRELUC  BERUMA  MENAK  IRA  ARAC  COMMITNER@ 
+$git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago' --author=alex// cuyca  talis  infon  bayc  konkret  um  anun@  nshenq  ira  commitner@  kberi 
+
+$git log -p -2 // dursa  berum arvac  commitner@  ev  cuyca  talis  te inch  popoxutyuneren  arvel  "repositoryayum  "  -2 kam -N cankacac  tiv asumenq  qani  commit  cuyc  ta  
