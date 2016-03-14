@@ -18,4 +18,6 @@ $git add -u // ??kardal
 								/* reset  add file  */
 $ git reset // bolor  avelacrac  filer@  cheghyal  en hamarvum add eghacner@ cheghyalen  hamarvum 
 $ git rm --cached FileName.php // add aneluc  status@  stugum enq  yete  ka  avelort  mi  file  iran  add  eghacneric  hanumenq  es  hramanov 
-								
+							
+								/* COMMIT*/
+$git commit -a -m"mesage"  // -a nshanakuma      // -m " ira  mej  grumenq  commiti  anun@  " commit indexsaciaya  anum mer  add eghac filer@  
