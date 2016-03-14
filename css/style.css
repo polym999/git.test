@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/* CSS Document */
+/*reset <div class="left_saidbar">
+        </div><!-- end left --> 
+        
+        <div class="content">
+        </div><!-- end centr --> 
+            */
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}			
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.clear_bot {
+	clear: both;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow:hidden;
+}
+/*nav*/
+nav {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 22;
+	width:100%;
+	padding:15px;
+	transition:all 0.5s;
+	
+}
+nav ul {
+	float: right;
+	list-style: none;
+	padding: 45px 45px 0 0;
+	transition:all 0.5s;
+
+}
+.a_active{
+	border-radius: 10px;
+    background-color: #00aeef;
+}
+nav ul li {
+	float: left;
+	text-align: center;
+	margin-left: 37px;
+	padding: 0 12px 0;
+}
+nav ul li a, #nav ul li a:visited {
+	color: #ffffff;
+	font-size: 13px;
+	font-family: Verdana,sans-serif;
+	line-height: 35px;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+
+}
+nav ul li a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+/*video*/
+.blacl_line{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 1;
+	transition:all 0.5s;
+}
+.video {
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: -1;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	transform: translate(-50%, -50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+}
+.greys{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+/*text*/
+section{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding-right: 15%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	z-index: 3;
+
+}
+section p span{
+	color: #00aeef;
+}
+section p:first-child{
+	color: #fff !important;
+	padding-bottom: 5px;
+}
+section p{
+	width: 75%;
+	text-align: right;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #C9C0C0;
+	letter-spacing: 5px;
+	word-spacing: 15px;
+	line-height: 25px;
+	float: right;
+}
+/*left page*/
+.left_page{
+	font-family: 'montserratregular';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	transition:all 0.5s;
+	background-color:rgba(232,232,232,0.7);
+}
+
+.open_left{
+	left:0 !important;
+}
+.left_page_info{
+	width:100%;
+	position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.left_page h1{
+	position: absolute;
+	top: 17%;
+	left: 40%;
+	transform:translate(-40%,-17%);
+	font-size: 36px;
+    color: #cccccc;
+	letter-spacing: 15px;
+}
+.wite_bg{
+	background-color:#e8e8e8;
+	position: absolute;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transition:all 0.5s;
+}
+.wite_line{
+	right:0 !important;
+	width: 83% !important;
+}
+.left_menu_start{
+	position:relative;
+	display:inline-block;
+	width:24%;
+	padding-left: 2%;
+	
+}
+.next_clos {
+	position:absolute;
+	right:-40px;
+	bottom:64px;
+	width:48px;
+	height:48px;
+	overflow:hidden;
+	cursor:pointer;
+	background: url(../img/b4.png) no-repeat;
+}
+.close_next{
+	background: url(../img/a4.png) no-repeat !important;
+}
+.desc_service{
+	font-size:39px;
+	margin-bottom:5%;
+	letter-spacing: 10px;
+	word-spacing: 20px;
+}
+.desc_service + p{
+	font-size:16px;
+	width: 70%;
+    color: #666666;
+	word-spacing:5px;
+}
+.left_menu{
+	display:inline-block;
+	width:20%;
+	margin-left:5%;
+}
+.left_menu >  div {
+	margin-bottom:5%;
+}
+
+.lm_desc {
+	font-size:30px;
+	margin-bottom:9%;
+	width:50%;
+	letter-spacing: 7px;
+
+}
+.lm_desc + p {
+	font-size:15px;
+	line-height:45px;
+	width:75%;
+	color: darkgrey;
+}
+@media (max-width: 1450px) {
+.left_page h1{
+	font-size:30px;
+}
+	.desc_service{
+		font-size:30px;
+	}
+	.desc_service + p{
+		font-size:14px;
+	}
+
+	.lm_desc {
+		font-size:25px;
+		margin-bottom:9%;
+
+	}
+	.lm_desc + p {
+		font-size:13px;
+		line-height:40px;
+	}
+}
+@media (max-width: 1150px) {
+.left_page h1{
+	font-size:25px;
+}
+
+	.desc_service{
+		font-size: 23px;
+
+	}
+	.desc_service + p{
+		font-size: 12px;
+
+	}
+	.next_clos{
+		right: -27px;
+	}
+
+	.lm_desc {
+		font-size: 20px;
+		margin-bottom: 5%;
+
+
+	}
+	.lm_desc + p {
+		font-size: 11px;
+		line-height: 34px;
+
+	}
+}
+@media (max-width: 989px) {
+
+	.desc_service{
+		font-size: 19px;
+
+	}
+	.desc_service + p{
+		font-size: 10px;
+
+	}
+	.next_clos{
+		right: -25px;
+	}
+
+	.lm_desc {
+		font-size: 17px;
+		margin-bottom: 5%;
+
+
+	}
+	.lm_desc + p {
+		font-size: 8px;
+		line-height: 28px;
+
+	}
+}

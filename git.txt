@@ -1,0 +1,21 @@
+1:git init  // asumenq  vor  es  proekti het  ashkhati  git@  steghcuma  iran  hamapataskhan  folder
+
+2 : git status  // cuyca  talis  tvyal pahin  projecti  iravijak@ 
+
+3 IGNORE // DZERQOV  SDTEGHCUM ENQ  .ignore file  fortgh  grumenq  vor  filer@  commit  chain  
+3->//# logs  papken  commit  chi  ani  
+3->logs/
+3-># asumenq  css papki  meji  bolor .txt formaat  unecogh filer@  arhamari  commit  mi  ara  
+3->css/*/txt 
+
+4 :$ git status --untracked-files=all // bolor  filer@  ignore  aracnernel miasin  cuyca  talis
+						
+								/* add  file  git*/
+								
+$git add . //avelacnuma  amboghj@  
+$git add -A // ?? kardal avelacnuma  amboghj@
+$git add -u // ??kardal
+								/* reset  add file  */
+$ git reset // bolor  avelacrac  filer@  cheghyal  en hamarvum add eghacner@ cheghyalen  hamarvum 
+$ git rm --cached FileName.php // add aneluc  status@  stugum enq  yete  ka  avelort  mi  file  iran  add  eghacneric  hanumenq  es  hramanov 
+								
