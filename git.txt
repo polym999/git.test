@@ -13,6 +13,7 @@
 								/* add  file  git*/
 								
 $git add . //avelacnuma  amboghj@  
+$git add "*.css"//add a  anum menak  .css filer@
 $git add -A // ?? kardal avelacnuma  amboghj@
 $git add -u // ??kardal
 								/* reset  add file  */
@@ -20,4 +21,4 @@ $ git reset // bolor  avelacrac  filer@  cheghyal  en hamarvum add eghacner@ che
 $ git rm --cached FileName.php // add aneluc  status@  stugum enq  yete  ka  avelort  mi  file  iran  add  eghacneric  hanumenq  es  hramanov 
 							
 								/* COMMIT*/
-$git commit -a -m"mesage"  // -a nshanakuma      // -m " ira  mej  grumenq  commiti  anun@  " commit indexsaciaya  anum mer  add eghac filer@  
+$git commit -a -m"mesage"  // -a nshanakuma      // -m " ira  mej  grumenq  commiti  anun@  " commit indexsaciaya  anum menak add eghac filer@
